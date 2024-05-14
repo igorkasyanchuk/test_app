@@ -1,0 +1,12 @@
+<%= turbo_frame_tag "breed_form_errors" do %>
+  <% if breed_form.errors.any? %>
+    <div id="error_explanation">
+      <h5 class="h5">Errors:</h5>
+      <ul>
+        <% breed_form.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<% end %>

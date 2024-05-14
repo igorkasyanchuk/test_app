@@ -1,0 +1,16 @@
+<%= turbo_stream.replace "breed_frame" do %>
+  <%= turbo_frame_tag "breed_frame" do %>
+    <% if @breed %>
+      <div class="mt-4 text-center">
+        <h1 class="h3 text-success">
+          <%= @breed.name %>
+        </h1>
+        <%= image_tag @breed.url, class: "img-fluid" %>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>
+
+<%= turbo_stream.replace "breed_form_errors" do %>
+  <%= render "errors", breed_form: @breed_form %>
+<% end %>

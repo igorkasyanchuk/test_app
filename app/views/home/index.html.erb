@@ -1,0 +1,16 @@
+<main id="breed-form-container" class="w-100 m-auto">
+  <%= turbo_frame_tag "breed_form_frame" do %>
+    <%= render 'errors', breed_form: @breed_form %>
+
+    <%= form_for @breed_form, url: lookup_path do |f| %>
+      <h1 class="h3 mb-3 fw-normal">Enter:</h1>
+      <div class="form-floating">
+        <%= f.text_field :name, class: "form-control", placeholder: "terrier, corgi"%>
+        <%= f.label :breed, "Breed" %>
+      </div>
+      <%= f.submit "Submit", class: "mt-1 btn btn-primary w-100 py-2" %>
+    <% end %>
+  <% end %>
+
+  <%= turbo_frame_tag "breed_frame" %>
+</main>

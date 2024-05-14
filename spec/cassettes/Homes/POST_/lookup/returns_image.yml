@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dog.ceo/api/breed/hound/images/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 14 May 2024 14:43:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '99'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/8.1.25
+      Cache-Control:
+      - no-cache, private
+      Access-Control-Allow-Origin:
+      - "*"
+      Via:
+      - 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+      X-Cache-Hits:
+      - '0'
+      X-Cache:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=6lpkgyXp%2FSWHhoXQTMhBk0qdsjJFgUnrsjYg%2FZ5%2FKuHM%2Br71P5WrvtzgxcpghYoblkXZQwrj0UocTtmOoBhwewjMx%2F3x1R9cQBXcUZ36f5NaZIRKj5kfNdWC"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 883ba99d6af4b236-WAW
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"https:\/\/images.dog.ceo\/breeds\/hound-afghan\/n02088094_4406.jpg","status":"success"}'
+  recorded_at: Tue, 14 May 2024 14:43:47 GMT
+recorded_with: VCR 6.2.0

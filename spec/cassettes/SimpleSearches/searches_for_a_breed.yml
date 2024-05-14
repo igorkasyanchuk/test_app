@@ -1,0 +1,122 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dog.ceo/api/breed/hounda/images/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 14 May 2024 14:58:57 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/8.1.25
+      Cache-Control:
+      - no-cache, private
+      Access-Control-Allow-Origin:
+      - "*"
+      Via:
+      - 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+      X-Cache-Hits:
+      - '0'
+      X-Cache:
+      - MISS
+      Age:
+      - '0'
+      Vary:
+      - ''
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=%2F9deewmyg%2BPZ2Xaac%2FUgxyKaxJLjX5tMGLDAHsaBUAozK7h0mAhJVDV6ZEHQmOaflxhpKnLv2h6IcZvrIoPxtPzHJqZmainzwpqqXemyFrBo59vusP2JDy73"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 883bbfd729960095-AMS
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"error","message":"Breed not found (master breed does not
+        exist)","code":404}'
+  recorded_at: Tue, 14 May 2024 14:58:57 GMT
+- request:
+    method: get
+    uri: https://dog.ceo/api/breed/hound/images/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 14 May 2024 15:06:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '99'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/8.1.25
+      Cache-Control:
+      - no-cache, private
+      Access-Control-Allow-Origin:
+      - "*"
+      Via:
+      - 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+      X-Cache-Hits:
+      - '0'
+      X-Cache:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=KuzrnKp42en3f5Td5W4tGWN0vMzB4w62WUl4qVJBA3jLW48zEYA9PLCWWsIr86WYExq2TfdCFEKpQgNDUxaSyhUgsYFhmeyYB1YbRjF8h%2FTXFTJJAweZi7wo"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 883bcb57ed8834aa-WAW
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"https:\/\/images.dog.ceo\/breeds\/hound-ibizan\/n02091244_3161.jpg","status":"success"}'
+  recorded_at: Tue, 14 May 2024 15:06:48 GMT
+recorded_with: VCR 6.2.0
